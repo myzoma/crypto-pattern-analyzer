@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>محلل الأنماط الفنية للعملات الرقمية</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;,">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="app-container">
@@ -24,12 +23,8 @@
                 <div class="pattern-filter">
                     <select id="patternSelect">
                         <option value="all">جميع الأنماط</option>
-                        <option value="double-bottom">القاع الثنائي</option>
-                        <option value="triple-top">القمة الثلاثية</option>
-                        <option value="triple-bottom">القاع الثلاثي</option>
-                        <option value="head-shoulders">الرأس والكتفين</option>
-                        <option value="inv-head-shoulders">الرأس والكتفين المقلوب</option>
-                        <!-- باقي الأنماط -->
+                        <option value="doubleBottom">القاع الثنائي</option>
+                        <!-- باقي الخيارات -->
                     </select>
                 </div>
                 <div class="search-container">
@@ -37,34 +32,16 @@
                 </div>
             </div>
         </header>
-
         <main id="cryptoGrid" class="crypto-grid">
             <!-- البطاقات ستضاف ديناميكياً -->
         </main>
-
-        <!-- نافذة التفاصيل -->
         <div id="detailsModal" class="modal">
             <div class="modal-content">
                 <span class="close-button">&times;</span>
-                <div class="pattern-details">
-                    <h2 id="modalTitle"></h2>
-                    <div id="modalChart"></div>
-                    <div class="pattern-info">
-                        <div class="targets">
-                            <h3>الأهداف السعرية:</h3>
-                            <p id="target1"></p>
-                            <p id="target2"></p>
-                        </div>
-                        <div class="confirmation">
-                            <h3>حالة النموذج:</h3>
-                            <p id="patternStatus"></p>
-                        </div>
-                    </div>
-                </div>
+                <!-- محتوى النافذة المنبثقة -->
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
